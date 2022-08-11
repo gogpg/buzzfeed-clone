@@ -95,8 +95,10 @@ const questions = [
     }
 ]
 
-const populateQuestions = () => {
+const populateQuestions = () => { 
+
     questions.forEach(question => {   //prasuku cikla per questions masyva
+
         const titleBlock = document.createElement('div') //kiekvienam klausimui sukuriu div elementa
         titleBlock.id = question.id  //div elemento id tures klausimo id
         titleBlock.classList.add('title-block')  //pridedu klase, kad matyciau ekrane, galeciau sukurti stiliu css faile
@@ -112,11 +114,28 @@ const populateQuestions = () => {
         answersBlock.classList.add('answer-options')
 
         question.answers.forEach(answer => {    //dabar sukamas ciklas kiekvieno klausimo viduje
-            const answerBlock = document.createElement('div') //sukuriamas divas kiekvienam klausimui
+
+            const answerBlock = document.createElement('div') //sukuriamas divas kiekvienam atsakymui
             answerBlock.classList.add('answer-block')  //sukuriama klase, kad galetume parasyti stiliu
-            answerBlock.addEventListener('click', handleClick)
-            const answerImage = document.createElement('img')
+            answerBlock.addEventListener('click', handleClick) //sukuriame eventlisteneri, kad paspaudus ant atsakymo ivyktu nustaytas ivykis
+
+            const answerImage = document.createElement('img') //sukuriame elementa nuotraukai
             answerImage.setAttribute('src', answer.image)
+            answerImage.setAttribute('alt', answer.alt)
+            
+            answerTitle = document.createElement('h3')  //sukuriame atsakymo pavadinima
+            answerTitle.textContent = answer.text       //atsakymo antrastes tekstas lygus kiekvieno atsakymo per kuri sukamas ciklas tekstui
+
+            const answerInfo = document.createElement('p') //sukuriame atsakymu informacijos bloka p.
+
+            const imgLink = document.createElement('a')  //kiekvienam atsakymui sukuriame nuorodos vieta
+            imgLink.setAttribute('href', answer.credit)  //jai prsiskiriame nuoroda ir jai priskiriame answer.credid, nuves i nuoroda, kas padare nuotrauka
+
+            /*const sourceLink = document.createElement('a') //sukuriame dar vienos nuorodos vieta, kurioje bus nuoroda i saltini, is kurio paimta nuotrauka
+            sourceLink.textContent = 'Unsplash' //jai priskiriamas tekstas atidaryti
+            sourceLink.setAttribute('src', 'https://www.unsplash.com') //paspaudus ant unsplash atidarys saltinio nuoroda(mano saltiniai ne is ten, rasyta pagal pavyzdi)*/
+
+            answerBlock.append(answerImage, answerTitle) //i atsakymu bloka ikeliu sukurta atsakymu img ir pavadinima.
             
 
         })
