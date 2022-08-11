@@ -131,13 +131,15 @@ const populateQuestions = () => {
             const imgLink = document.createElement('a')  //kiekvienam atsakymui sukuriame nuorodos vieta
             imgLink.setAttribute('href', answer.credit)  //jai prsiskiriame nuoroda ir jai priskiriame answer.credid, nuves i nuoroda, kas padare nuotrauka
 
-            /*const sourceLink = document.createElement('a') //sukuriame dar vienos nuorodos vieta, kurioje bus nuoroda i saltini, is kurio paimta nuotrauka
+            const sourceLink = document.createElement('a') //sukuriame dar vienos nuorodos vieta, kurioje bus nuoroda i saltini, is kurio paimta nuotrauka
             sourceLink.textContent = 'Unsplash' //jai priskiriamas tekstas atidaryti
-            sourceLink.setAttribute('src', 'https://www.unsplash.com') //paspaudus ant unsplash atidarys saltinio nuoroda(mano saltiniai ne is ten, rasyta pagal pavyzdi)*/
+            sourceLink.setAttribute('src', 'https://www.unsplash.com') //paspaudus ant unsplash atidarys saltinio nuoroda(mano saltiniai ne is ten, rasyta pagal pavyzdi)
 
-            answerBlock.append(answerImage, answerTitle) //i atsakymu bloka ikeliu sukurta atsakymu img ir pavadinima.
+            answerInfo.append(imgLink, ' to ', sourceLink) //i answer info sukrta elementa idedame nuotrauku nuorodas ir saltiniu nuorodas
+
+            answerBlock.append(answerImage, answerTitle, answerInfo) //i atsakymu bloka ikeliu sukurta atsakymu img ir pavadinima ir informacija.
             
-
+            answersBlock.append(answerBlock) //i atsakymu bloka dedame kiekvieno atsakymo bloka
         })
 
         questionDisplay.append(answersBlock)  //i klausimu lauka ikeliu atsakymu div
