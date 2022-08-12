@@ -7,28 +7,28 @@ const questions = [
         text: "Pick a vacation destination:",
         answers: [
             {
-                text: "New York",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/800px-Empire_State_Building_%28aerial_view%29.jpg",
-                alt: "Photo of the Empire State building during daytime",
-                credit: ""
+                text: "Italy",
+                image: "https://images.unsplash.com/photo-1595321673048-e1f4af403d03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=crop&h=230&q=edges",
+                alt: "Italy, Venezia",
+                credit: "Adrian Negura"
             },
             {
-                text: "Austin",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/TexasStateCapitol-2010-02.JPG/1024px-TexasStateCapitol-2010-02.JPG",
-                alt: "Photo of Texas State Capitol",
-                credit: ""
+                text: "Turkey",
+                image: "https://images.unsplash.com/photo-1654162115137-4f083a2ac627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=crop&h=230&q=edges",
+                alt: "Old town of Antalya, Turkey",
+                credit: "Igor Sporynin"
             },
             {
-                text: "Portland",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Arlene_Schnitzer_Concert_Hall.jpg/800px-Arlene_Schnitzer_Concert_Hall.jpg",
-                alt: "Arlene Schnitzer Concert Hall",
-                credit: ""
+                text: "USA",
+                image: "https://images.unsplash.com/photo-1644203326795-9214b935cc04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=crop&h=230&q=edges",
+                alt: "San Francisco, CA, USA",
+                credit: "Vikrant Mathure"
             },
             {
-                text: "New Orleans",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/%D0%91%D1%83%D1%80%D0%B1%D0%BE%D0%BD-%D1%81%D1%82%D1%80%D0%B8%D1%82_%28square%29.jpg/800px-%D0%91%D1%83%D1%80%D0%B1%D0%BE%D0%BD-%D1%81%D1%82%D1%80%D0%B8%D1%82_%28square%29.jpg",
-                alt: "Burbon street",
-                credit: "By bellemarematt"
+                text: "Poland",
+                image: "https://images.unsplash.com/photo-1569166067304-9b5d8be29d1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=crop&h=230&q=edges",
+                alt: "Riverside of Gdansk in Poland",
+                credit: "Ferdinand Stöhr"
             }
         ]
     },
@@ -38,28 +38,28 @@ const questions = [
         text: "Pick some food:",
         answers: [
             {
-                text: "Pizza",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1024px-Pizza-3007395.jpg",
-                alt: " Neapolitan-style pizza",
-                credit: "Igor Ovsyannykov"
+                text: "Soup",
+                image: "https://images.unsplash.com/photo-1659480150417-25f9f0d5ca2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=crop&h=230&q=edges",
+                alt: "Tomato soup with grilled cheese croutons",
+                credit: "Lily Morello"
             },
             {
-                text: "Sandwich",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Korbel_Champagne_Cellars_-_Stierch_-_April_2019_05.jpg/640px-Korbel_Champagne_Cellars_-_Stierch_-_April_2019_05.jpg",
-                alt: "Turkey sandwich",
-                credit: ""
+                text: "Toast",
+                image: "https://images.unsplash.com/photo-1659778059522-d280d965fde8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=crop&h=230&q=edges",
+                alt: "Avocado toast",
+                credit: "Dima Solomin"
             },
             {
-                text: "Pasta",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Pasta_alla_Nerano.jpg/800px-Pasta_alla_Nerano.jpg",
-                alt: "Pasta alla Nerano",
-                credit: "Enzo Rippa"
+                text: "Pancakes",
+                image: "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=crop&h=230&q=edges",
+                alt: "Pancakes for breakfast",
+                credit: "Calum Lewis"
             },
             {
-                text: "Salat",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Vogel-Sternmieren-Salat%28Detail%29.jpg/800px-Vogel-Sternmieren-Salat%28Detail%29.jpg",
-                alt: "Czar Salad",
-                credit: "Vogel Sternmieren"
+                text: "Omelette",
+                image: "https://images.unsplash.com/photo-1660288929005-e69b03a7bf37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&h=230&w=320&q=edges",
+                alt: "Egg omelette with smoked salmon and homemade fermented honey-lemon drink",
+                credit: "Monika Grabkowska"
             }
         ]
     },
@@ -69,27 +69,27 @@ const questions = [
         answers: [
             {
                 text: "Traditional",
-                image: "https://www.scandia-hus.co.uk/wp-content/uploads/The-Oaks-61-2-e1611230379190-655x450.jpg",
-                alt: "",
-                credit: ""
+                image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=230&w=320&q=edges",
+                alt: " Concrete Villa",
+                credit: "Todd Kent"
             },
             {
                 text: "Modern",
-                image: "http://creativeoverflow.net/wp-content/uploads/2018/11/778ff64d062e7c59bf5f1a61290ba878.jpg",
-                alt: "",
-                credit: ""
+                image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=230&w=320&q=edges",
+                alt: "Architecture",
+                credit: "R Architecture"
             },
             {
-                text: "Beach",
-                image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/303315943.jpg?k=e8b80e6e273ab744215eb5fce6c7d0b280cb96ca7f8876d25dc040fa7e35156b&o=&hp=1",
-                alt: "",
-                credit: ""
+                text: "Treehouse",
+                image: "https://images.unsplash.com/photo-1519378045141-f05b62faa055?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=230&w=320&q=edges",
+                alt: "Treehouse by Blue Forest",
+                credit: "Matthew Harwood"
             },
             {
-                text: "Wooden",
-                image: "https://thearchitecturedesigns.com/wp-content/uploads/2019/03/7-wooden-house-design-ideas-1024x576.jpg",
-                alt: "",
-                credit: ""
+                text: "Mansion",
+                image: "https://images.unsplash.com/photo-1561753757-d8880c5a3551?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=230&w=320&q=edges",
+                alt: "Am Attersee in Oberösterreich - Salzkammergut",
+                credit: "Walter Sturn"
             }
         ]
     }
@@ -110,20 +110,20 @@ const populateQuestions = () => {
         questionDisplay.append(titleBlock)  //idedu div blokus i klausimu langa.
 
         const answersBlock = document.createElement('div')  //sukuriamas divas atsakymams
-        answersBlock.id = question.id + "-questions"
+        answersBlock.id = question.id + "-questions"       // atsakymo bloko id lygus atsakymu id, bet turi buti unikalus, todel dadedame kabutese zodii, kad nesikirst su auksciau priskirtu id
         answersBlock.classList.add('answer-options')
 
         question.answers.forEach(answer => {    //dabar sukamas ciklas kiekvieno klausimo viduje
 
             const answerBlock = document.createElement('div') //sukuriamas divas kiekvienam atsakymui
             answerBlock.classList.add('answer-block')  //sukuriama klase, kad galetume parasyti stiliu
-            answerBlock.addEventListener('click', handleClick) //sukuriame eventlisteneri, kad paspaudus ant atsakymo ivyktu nustaytas ivykis
+            answerBlock.addEventListener('click', () => handleClick)   //sukuriame eventlisteneri, kad paspaudus ant atsakymo ivyktu nustaytas ivykis
 
             const answerImage = document.createElement('img') //sukuriame elementa nuotraukai
             answerImage.setAttribute('src', answer.image)
             answerImage.setAttribute('alt', answer.alt)
             
-            answerTitle = document.createElement('h3')  //sukuriame atsakymo pavadinima
+            const answerTitle = document.createElement('h3')  //sukuriame atsakymo pavadinima
             answerTitle.textContent = answer.text       //atsakymo antrastes tekstas lygus kiekvieno atsakymo per kuri sukamas ciklas tekstui
 
             const answerInfo = document.createElement('p') //sukuriame atsakymu informacijos bloka p.
@@ -133,7 +133,7 @@ const populateQuestions = () => {
 
             const sourceLink = document.createElement('a') //sukuriame dar vienos nuorodos vieta, kurioje bus nuoroda i saltini, is kurio paimta nuotrauka
             sourceLink.textContent = 'Unsplash' //jai priskiriamas tekstas atidaryti
-            sourceLink.setAttribute('src', 'https://www.unsplash.com') //paspaudus ant unsplash atidarys saltinio nuoroda(mano saltiniai ne is ten, rasyta pagal pavyzdi)
+            sourceLink.setAttribute('src', 'https://www.unsplash.com') //paspaudus ant unsplash atidarys saltinio nuoroda.
 
             answerInfo.append(imgLink, ' to ', sourceLink) //i answer info sukrta elementa idedame nuotrauku nuorodas ir saltiniu nuorodas
 
@@ -144,6 +144,7 @@ const populateQuestions = () => {
 
         questionDisplay.append(answersBlock)  //i klausimu lauka ikeliu atsakymu div
     })
+    
 }
 populateQuestions()
 
