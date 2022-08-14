@@ -250,6 +250,7 @@ const disableQuestionBlock = (questionId, chosenAnswer) => {       //uzpilkiname
     const currentQuestionBlock = document.getElementById(questionId + "-questions")   //paimami visi klausimai
     
     Array.from(currentQuestionBlock.children).forEach(block => {    //sukamas ciklas per ju vaikus, atsakymus
+        console.log(block)
         if (block.children.item(1).innerText != chosenAnswer) {     //imame atsakymu antra eilute, kur yra tekstas ir palyginame ar jis nesutampa su pasirinktu atsakymu
             block.style.opacity = "50%"            //randame nepasirinkta klausima ir ji padarome blankiu
         }
